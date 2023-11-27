@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E45D05DF2A3B460200F834C1 /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D05DE2A3B460200F834C1 /* UIcolor+.swift */; };
+		E45D05E22A3B464900F834C1 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D05E12A3B464900F834C1 /* ButtonDefault.swift */; };
+		E45D05E42A3B466D00F834C1 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D05E32A3B466D00F834C1 /* ImageDefault.swift */; };
+		E45D05E72A3B46CF00F834C1 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D05E62A3B46CF00F834C1 /* LabelDefault.swift */; };
+		E45D05E92A3B46F000F834C1 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D05E82A3B46F000F834C1 /* TextFieldDefault.swift */; };
 		E462549F2A2E1037000C9264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462549E2A2E1037000C9264 /* AppDelegate.swift */; };
 		E46254A12A2E1037000C9264 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46254A02A2E1037000C9264 /* SceneDelegate.swift */; };
 		E46254A32A2E1037000C9264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46254A22A2E1037000C9264 /* ViewController.swift */; };
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E45D05DE2A3B460200F834C1 /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+.swift"; sourceTree = "<group>"; };
+		E45D05E12A3B464900F834C1 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		E45D05E32A3B466D00F834C1 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
+		E45D05E62A3B46CF00F834C1 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		E45D05E82A3B46F000F834C1 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		E462549B2A2E1037000C9264 /* AppNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462549E2A2E1037000C9264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46254A02A2E1037000C9264 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +96,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E45D05DD2A3B45DB00F834C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E45D05DE2A3B460200F834C1 /* UIcolor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E45D05E02A3B462F00F834C1 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E45D05E12A3B464900F834C1 /* ButtonDefault.swift */,
+				E45D05E32A3B466D00F834C1 /* ImageDefault.swift */,
+				E45D05E62A3B46CF00F834C1 /* LabelDefault.swift */,
+				E45D05E82A3B46F000F834C1 /* TextFieldDefault.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 		E46254922A2E1037000C9264 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +138,8 @@
 		E462549D2A2E1037000C9264 /* AppNotifica */ = {
 			isa = PBXGroup;
 			children = (
+				E45D05E02A3B462F00F834C1 /* Infrastructure */,
+				E45D05DD2A3B45DB00F834C1 /* Extensions */,
 				E46254D82A2E2017000C9264 /* Controller */,
 				E46254D22A2E1C30000C9264 /* Coordinator */,
 				E46254D12A2E1751000C9264 /* Resource */,
@@ -299,11 +330,16 @@
 			files = (
 				E46254D62A2E1D14000C9264 /* LoginCoordinator.swift in Sources */,
 				E46254DA2A2E2037000C9264 /* LoginView.swift in Sources */,
+				E45D05E72A3B46CF00F834C1 /* LabelDefault.swift in Sources */,
+				E45D05E92A3B46F000F834C1 /* TextFieldDefault.swift in Sources */,
 				E46254A32A2E1037000C9264 /* ViewController.swift in Sources */,
 				E462549F2A2E1037000C9264 /* AppDelegate.swift in Sources */,
 				E46254DC2A2E2061000C9264 /* LoginViewController.swift in Sources */,
 				E46254D42A2E1C58000C9264 /* Coordinator.swift in Sources */,
 				E46254A92A2E1037000C9264 /* AppNotifica.xcdatamodeld in Sources */,
+				E45D05E42A3B466D00F834C1 /* ImageDefault.swift in Sources */,
+				E45D05E22A3B464900F834C1 /* ButtonDefault.swift in Sources */,
+				E45D05DF2A3B460200F834C1 /* UIcolor+.swift in Sources */,
 				E46254A12A2E1037000C9264 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
