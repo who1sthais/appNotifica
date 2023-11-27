@@ -28,6 +28,7 @@
 		E45D060C2A49C15500F834C1 /* SobreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D060B2A49C15500F834C1 /* SobreCoordinator.swift */; };
 		E45D060E2A49C18100F834C1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D060D2A49C18100F834C1 /* TabBarCoordinator.swift */; };
 		E45D06102A49C1BB00F834C1 /* NovaOcorrenciaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D060F2A49C1BB00F834C1 /* NovaOcorrenciaCoordinator.swift */; };
+		E45D06122A4B154600F834C1 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D06112A4B154600F834C1 /* EscolherImagem.swift */; };
 		E462549F2A2E1037000C9264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462549E2A2E1037000C9264 /* AppDelegate.swift */; };
 		E46254A12A2E1037000C9264 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46254A02A2E1037000C9264 /* SceneDelegate.swift */; };
 		E46254A32A2E1037000C9264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46254A22A2E1037000C9264 /* ViewController.swift */; };
@@ -83,6 +84,7 @@
 		E45D060B2A49C15500F834C1 /* SobreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreCoordinator.swift; sourceTree = "<group>"; };
 		E45D060D2A49C18100F834C1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		E45D060F2A49C1BB00F834C1 /* NovaOcorrenciaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOcorrenciaCoordinator.swift; sourceTree = "<group>"; };
+		E45D06112A4B154600F834C1 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 		E462549B2A2E1037000C9264 /* AppNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462549E2A2E1037000C9264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46254A02A2E1037000C9264 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				E45D06052A49C07700F834C1 /* NovaOcorrenciaView.swift */,
 				E45D06072A49C0BA00F834C1 /* NovaOcorrenciaViewController.swift */,
+				E45D06112A4B154600F834C1 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				E45D06042A49C04900F834C1 /* SobreView.swift in Sources */,
 				E45D06022A49BFF200F834C1 /* TabBarController.swift in Sources */,
 				E45D060C2A49C15500F834C1 /* SobreCoordinator.swift in Sources */,
+				E45D06122A4B154600F834C1 /* EscolherImagem.swift in Sources */,
 				E45D05FB2A40A1D600F834C1 /* ViewControllerDefault.swift in Sources */,
 				E45D05E72A3B46CF00F834C1 /* LabelDefault.swift in Sources */,
 				E45D05EC2A3B523A00F834C1 /* RegisterView.swift in Sources */,

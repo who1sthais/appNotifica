@@ -18,7 +18,7 @@ class ViewControllerDefault: ViewController {
         self.navigationController?.navigationBar.prefersLargeTitles=true
         
         //Faz com que o botao superior do navigationController desapareca
-        //self.navigationItem.setHidesBackButton(true, animated: false)
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         //Faz com que o teclado desapareca clicando em qualquer lugar na tela
         let tap: UITapGestureRecognizer = UITapGestureRecognizer( target: self, action: #selector(self.hideKeyBoardByTappinoutSide))
