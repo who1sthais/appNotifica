@@ -1,14 +1,14 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  AppNotifica
 //
-//  Created by IFBIOTIC12 on 05/06/23.
+//  Created by IFBIOTIC12 on 15/06/23.
 //
 
 import Foundation
 import UIKit
 
-class LoginView: UIView {
+class RegisterView: UIView {
     //MARK: - Initialize
         override init(frame: CGRect) {
             //chama o frame da superclasse
@@ -19,17 +19,11 @@ class LoginView: UIView {
             
         }
     
-    //MARK: - Closures
-    var onRegisterTap: (() -> Void)?
-    
-    //MARK: - Properties
-    
-    //cria a função com as propriadades da imagem no login
-    var imageLogin = ImageDefault(image: "ImageLogin")
        
 
     //cria a função com as propriadades da label no login
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
+    var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar")
+    
     
     //cria a função com as propriadades da text no login
     var emailTextField = TextFieldDefault (placeholder: "E-mail")
@@ -37,35 +31,37 @@ class LoginView: UIView {
     //cria a função com as propriadades da text no login
     var senhaTextField = TextFieldDefault (placeholder: "Senha")
     
-    //cria a função com as propriadades da butao no logor
-    var buttonLogar = ButtonDefault(botao: "LOGAR")
+    //cria a função com as propriadades da text no login
+    var confirmaSenhaTextField = TextFieldDefault (placeholder: "Confirme sua senha")
     
     //cria a função com as propriadades do botão registrar
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
     
+    //cria a função com as propriadades da butao no logor
+    var buttonLogar = ButtonDefault(botao: "LOGAR")
     
+   
+        
     
-    func setupVisualElements(){
-        self.addSubview(imageLogin)
+    func setupVisualElements() {
+        
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
         self.addSubview(senhaTextField)
-        self.addSubview(buttonLogar)
+        self.addSubview(confirmaSenhaTextField)
         self.addSubview(buttonRegistrar)
+        self.addSubview(buttonLogar)
         
-        buttonRegistrar.addTarget(self, action: #selector(registerTap), for: .touchUpInside)
+        
         NSLayoutConstraint.activate([
+        
             
-            imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
-            imageLogin.heightAnchor.constraint(equalToConstant: 82.64),
-            imageLogin.topAnchor.constraint(equalTo: self.topAnchor, constant: 239),
-            imageLogin.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 57),
-        
-            imageLabel.widthAnchor.constraint(equalToConstant: 100),
-            imageLabel.topAnchor.constraint(equalTo: imageLogin.bottomAnchor, constant: 5),
-            imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+            imageLabel.widthAnchor.constraint(equalToConstant: 374),
+            imageLabel.heightAnchor.constraint(equalToConstant: 60),
+            imageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 200),
+            imageLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
             imageLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-        
+            
             emailTextField.widthAnchor.constraint(equalToConstant: 374),
             emailTextField.heightAnchor.constraint(equalToConstant: 60),
             emailTextField.topAnchor.constraint(equalTo: imageLabel.bottomAnchor, constant: 70),
@@ -78,31 +74,31 @@ class LoginView: UIView {
             senhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             senhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
-            buttonLogar.widthAnchor.constraint(equalToConstant: 374),
-            buttonLogar.heightAnchor.constraint(equalToConstant: 50),
-            buttonLogar.topAnchor.constraint(equalTo: senhaTextField.bottomAnchor, constant: 25),
-            buttonLogar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            buttonLogar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            confirmaSenhaTextField.widthAnchor.constraint(equalToConstant: 374),
+            confirmaSenhaTextField.heightAnchor.constraint(equalToConstant: 60),
+            confirmaSenhaTextField.topAnchor.constraint(equalTo: senhaTextField.bottomAnchor, constant: 23),
+            confirmaSenhaTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            confirmaSenhaTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
+            
+
             buttonRegistrar.widthAnchor.constraint(equalToConstant: 374),
-            buttonRegistrar.heightAnchor.constraint(equalToConstant: 50),
-            buttonRegistrar.topAnchor.constraint(equalTo: buttonLogar.bottomAnchor, constant: 25),
+            buttonRegistrar.heightAnchor.constraint(equalToConstant: 60),
+            buttonRegistrar.topAnchor.constraint(equalTo: confirmaSenhaTextField.bottomAnchor, constant: 25),
             buttonRegistrar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             buttonRegistrar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
             
-        ])
+            buttonLogar.widthAnchor.constraint(equalToConstant: 374),
+            buttonLogar.heightAnchor.constraint(equalToConstant: 60),
+            buttonLogar.topAnchor.constraint(equalTo: buttonRegistrar.bottomAnchor, constant: 25),
+            buttonLogar.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            buttonLogar.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+
         
+        ])
     }
-    
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - Actions
-    
-    @objc
-    private func registerTap(){
-        onRegisterTap?()
-    }
 }
